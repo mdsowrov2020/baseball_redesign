@@ -421,8 +421,8 @@ table {
 }
 
 .table_content_height {
-  height: 450px;
-  overflow-y: scroll;
+  /* height: 450px;
+  overflow-y: scroll; */
   background-color: transparent !important;
 }
 
