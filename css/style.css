@@ -385,9 +385,9 @@ p {
 .all_links {
   padding: 10px;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  /* -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
   -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
-  box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important; */
 }
 
 .all_links ul li {
@@ -423,6 +423,7 @@ table {
 .table_content_height {
   height: 450px;
   overflow-y: scroll;
+  background-color: transparent !important;
 }
 
 .clinched_meaning p {
@@ -434,4 +435,119 @@ table {
   font-weight: 700;
   color: var(--paragraph_color);
   text-transform: uppercase;
+}
+
+/* collupse */
+
+.collapsible {
+  background-color: #fff;
+  color: var(--paragraph_color);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none !important;
+  text-align: left;
+  outline: none !important;
+  border-radius: 10px;
+  font-size: 15px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+
+.active_mlb,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.mlbs_content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* margin-top: 25px; */
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active_mlb:after {
+  content: '\2796';
+}
+/*  right card part start */
+
+.card_right_body {
+  padding: 12px 15px;
+}
+
+.subs_part {
+  text-align: center;
+}
+
+.subs_content {
+  border-radius: 20px;
+  padding: 5px;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+.subs_content h5 {
+  font-size: 16px !important;
+  color: var(--color_two);
+  font-weight: 700;
+  padding: 4px 0;
+}
+.subs_content p {
+  font-size: 12px;
+  color: var(--paragraph_color);
+  padding-bottom: 10px;
+}
+
+.subs_content a {
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: var(--clor_three);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: auto;
+}
+.subs_logo {
+  height: 48px;
+  width: 220px;
+  margin: auto;
+  overflow: hidden;
+  margin: 8px auto;
+}
+
+.subs_logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.example_card {
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+
+.right_card_list li {
+  display: block !important;
+  margin: 8px 0 !important;
+}
+
+.right_card_list li a {
+  color: var(--color_one) !important;
+  background-color: transparent !important;
+  font-size: 14px !important;
 }
