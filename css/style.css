@@ -17,6 +17,7 @@
   --clor_three: #ff7658;
   --heading_color: #6b6b6b;
   --paragraph_color: #8b8b8b;
+  --color_four: #03424f;
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -328,4 +329,109 @@ p {
   color: #fff !important;
   -webkit-box-shadow: 0px 1px 3px 2px rgba(181, 181, 181, 0.52) !important;
   box-shadow: 0px 1px 3px 2px rgba(181, 181, 181, 0.52) !important;
+}
+
+/* card left bottom part start */
+.card_left_bottom {
+  padding: 12px 20px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+
+.all_coll_cards {
+  width: 100%;
+  display: block;
+  background-color: var(--color_four);
+  padding: 18px 5px;
+  border-radius: 4px;
+  margin: 10px 0;
+  transition: all 0.5s linear;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+.all_coll_cards:hover {
+  background-color: var(--clor_three);
+}
+.sub_drops p {
+  text-align: justify;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 15px;
+}
+.all_coll_cards a[data-toggle='collapse'] {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+.all_coll_cards a {
+  color: #fff;
+  font-size: 14px;
+}
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+/* middle card css start */
+.middle_card_body {
+  padding: 12px 10px;
+}
+
+.all_links {
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+
+.all_links ul li {
+  display: inline-block;
+  margin: 2px;
+}
+.all_links ul li a {
+  font-size: 12px;
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: var(--color_one);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.table_body {
+  border-radius: 20px;
+  margin-top: 25px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
+  -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
+  box-shadow: 0px 10px 30px #2b56f524 !important;
+}
+
+table {
+  border-radius: 5px !important;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--clor_three) !important;
+  color: #fff !important;
+}
+
+.table_content_height {
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.clinched_meaning p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
+.mid_heading p {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--paragraph_color);
+  text-transform: uppercase;
 }
