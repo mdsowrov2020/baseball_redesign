@@ -1,0 +1,14 @@
+@media (min-width: 992px) {
+  #mynav ul li .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+  }
+  #mynav ul li:hover .dropdown-menu {
+    display: block !important;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+  }
+}
