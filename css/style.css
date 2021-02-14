@@ -555,6 +555,7 @@ table {
 .custom_card {
   height: 900px;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
   -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
   box-shadow: 0px 10px 30px #2b56f524 !important;
@@ -564,12 +565,10 @@ table {
   width: 4px !important;
 }
 
-/* Track */
 .custom_card::-webkit-scrollbar-track {
   background: #fff;
 }
 
-/* Handle */
 .custom_card::-webkit-scrollbar-thumb {
   background: var(--paragraph_color) !important;
 }
