@@ -559,3 +559,17 @@ table {
   -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
   box-shadow: 0px 10px 30px #2b56f524 !important;
 }
+
+.custom_card::-webkit-scrollbar {
+  width: 4px !important;
+}
+
+/* Track */
+.custom_card::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+.custom_card::-webkit-scrollbar-thumb {
+  background: var(--paragraph_color) !important;
+}
