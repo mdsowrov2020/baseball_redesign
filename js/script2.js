@@ -9,3 +9,10 @@ $('.close_search').click(function () {
   $('.search_box').toggleClass('active').focus;
   $('.search_control').val('');
 });
+
+// join form
+
+function visibleForm() {
+  var element = document.getElementById('join_form');
+  element.classList.toggle('active_signup_form');
+}

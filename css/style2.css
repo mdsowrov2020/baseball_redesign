@@ -122,8 +122,8 @@ h5 {
 
 #mynav ul li a:hover img {
   transform: rotate(360deg) scale(1.08);
-  -webkit-box-shadow: -12px 18px 28px -7px #cecece;
-  box-shadow: -12px 18px 28px -7px #cecece;
+  /* -webkit-box-shadow: -12px 18px 28px -7px #cecece;
+  box-shadow: -12px 18px 28px -7px #cecece; */
 }
 .search_box {
   width: 0px;
@@ -170,4 +170,105 @@ h5 {
   width: 450px;
   opacity: 1;
   visibility: visible;
+}
+
+/* banner page start */
+
+.sample_img {
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sample_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.signup_banner {
+  padding: 80px 0;
+  width: 100% !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  position: relative;
+  z-index: 1;
+}
+.signup_banner::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: -1;
+}
+.signup_content {
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+}
+
+.signup_inner {
+  text-align: center;
+}
+
+.signup_inner h2 {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.signup_inner a {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--clor_three);
+  border-radius: 30px;
+  color: #fff;
+}
+
+.signup_form {
+  border-radius: 50px;
+  background-color: var(--color_one);
+  margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s linear;
+  height: 0px;
+}
+.signup_btn {
+  display: block;
+  width: 100%;
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+  background-color: #1cd880;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-left: 8px;
+}
+
+.custom_control {
+  padding: 10px 10px !important;
+  height: 45px !important;
+  width: 100%;
+  border-radius: 30px;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.active_signup_form {
+  padding: 20px 35px;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.6s linear;
+  height: auto;
 }
