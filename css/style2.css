@@ -89,4 +89,11 @@ p {
   height: 100px;
   width: 100px;
   border-radius: 50%;
+  transition: all 0.4s linear;
+}
+
+#mynav ul li a:hover img {
+  transform: rotate(360deg) scale(1.08);
+  -webkit-box-shadow: -12px 18px 28px -7px #cecece;
+  box-shadow: -12px 18px 28px -7px #cecece;
 }
