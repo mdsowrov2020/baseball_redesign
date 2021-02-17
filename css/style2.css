@@ -44,6 +44,25 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
 .top_header_section {
   position: relative;
   height: 80px;
@@ -61,8 +80,8 @@ p {
   transform: translateY(-50%);
   height: auto;
   max-height: 75px;
-  max-width: 35%;
-  width: 10%;
+  max-width: 50%;
+  /* width: 10%; */
   border-radius: 4px;
 }
 
@@ -74,26 +93,82 @@ p {
   text-align: center;
 }
 
+.top_header_right h2 {
+  font-size: 45px !important;
+  color: var(--color_two);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /* nav part start */
 .cutom_nav {
   -webkit-box-shadow: 0px 2px 8px -6px #000000;
   box-shadow: 0px 2px 8px -6px #000000;
+  position: relative;
 }
 #mynav ul li {
   margin-right: 60px;
 }
 #mynav ul li:last-child {
   margin-right: 0px !important;
+  /* position: relative; */
 }
 #mynav ul li a img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  transition: all 0.4s linear;
+  transition: all 0.6s linear;
 }
 
 #mynav ul li a:hover img {
   transform: rotate(360deg) scale(1.08);
   -webkit-box-shadow: -12px 18px 28px -7px #cecece;
   box-shadow: -12px 18px 28px -7px #cecece;
+}
+.search_box {
+  width: 0px;
+  opacity: 0;
+  visibility: hidden;
+  height: 55px;
+  border-radius: 30px;
+  border: 2px solid crimson;
+  position: absolute;
+  right: 10% !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+
+.search_control {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.close_search {
+  position: absolute;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.close_search img {
+  height: 100%;
+  width: 100%;
+}
+.search_box.active {
+  width: 400px;
+  opacity: 1;
+  right: 15%;
+  visibility: visible;
 }
