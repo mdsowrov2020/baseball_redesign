@@ -292,7 +292,9 @@ h5 {
   box-shadow: -12px 18px 28px -7px #cecece; */
   transition: all 0.7s linear;
 }
-
+.footer_contents {
+  text-align: center;
+}
 .footer_contents ul {
   margin-bottom: 0px !important;
 }
@@ -304,6 +306,6 @@ h5 {
   color: #fff;
 }
 .footer_section {
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: var(--color_two);
 }
