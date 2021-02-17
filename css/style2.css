@@ -292,6 +292,32 @@ h5 {
   box-shadow: -12px 18px 28px -7px #cecece; */
   transition: all 0.7s linear;
 }
+.footer_contents ul li a.insta {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  ) !important;
+
+  color: #fff !important;
+}
+.footer_contents ul li a.fb {
+  background-color: #3b5998 !important;
+  color: #fff !important;
+}
+
+.footer_contents ul li a.tw {
+  background-color: #00acee !important;
+  color: #fff !important;
+}
+.footer_contents ul li a.ln {
+  background-color: #0e76a8 !important;
+  color: #fff !important;
+}
 .footer_contents {
   text-align: center;
 }
