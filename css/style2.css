@@ -1,0 +1,92 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('../css/bootstrap.min.css');
+@import url('../css/all.min.css');
+@import url('../css/slick-theme.css');
+@import url('../css/slick.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+:root {
+  --color_one: #11a3aa;
+  --color_two: #484848;
+  --clor_three: #ff7658;
+  --heading_color: #6b6b6b;
+  --paragraph_color: #8b8b8b;
+  --color_four: #03424f;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a:hover,
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.top_header_section {
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+.top_header_left {
+  width: 10%;
+  float: left;
+  height: 50px;
+}
+
+.top_header_section .top_header_logo a img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  max-height: 75px;
+  max-width: 35%;
+  width: 10%;
+  border-radius: 4px;
+}
+
+.top_header_section .top_header_right {
+  float: right;
+  padding: 20px 0;
+  height: 100%;
+  width: 90%;
+  text-align: center;
+}
+
+/* nav part start */
+.cutom_nav {
+  -webkit-box-shadow: 0px 2px 8px -6px #000000;
+  box-shadow: 0px 2px 8px -6px #000000;
+}
+#mynav ul li {
+  margin-right: 60px;
+}
+#mynav ul li:last-child {
+  margin-right: 0px !important;
+}
+#mynav ul li a img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
