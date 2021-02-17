@@ -63,15 +63,27 @@ h5 {
   font-size: 16px;
   font-weight: 400;
 }
+
+.all_heading {
+  text-align: center;
+}
+
+.all_heading h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color_two);
+}
 .top_header_section {
   position: relative;
   height: 80px;
   width: 100%;
+  background-color: var(--color_two);
 }
 .top_header_left {
   width: 10%;
   float: left;
   height: 50px;
+  padding-left: 20px;
 }
 
 .top_header_section .top_header_logo a img {
@@ -81,7 +93,7 @@ h5 {
   height: auto;
   max-height: 75px;
   max-width: 50%;
-  /* width: 10%; */
+  width: 7%;
   border-radius: 4px;
 }
 
@@ -94,8 +106,8 @@ h5 {
 }
 
 .top_header_right h2 {
-  font-size: 45px !important;
-  color: var(--color_two);
+  /* font-size: 45px !important; */
+  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -105,6 +117,7 @@ h5 {
   -webkit-box-shadow: 0px 2px 8px -6px #000000;
   box-shadow: 0px 2px 8px -6px #000000;
   position: relative;
+  background-color: #feece6bb;
 }
 #mynav ul li {
   margin-right: 60px;
@@ -165,13 +178,27 @@ h5 {
 .close_search img {
   height: 100%;
   width: 100%;
+  transition: all 0.4s linear;
+}
+.close_search img:hover {
+  transform: rotate(360deg);
 }
 .search_box.active {
   width: 450px;
   opacity: 1;
   visibility: visible;
 }
-
+.intro_text {
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+}
+.intro_text p {
+  font-size: 16px;
+  color: var(--paragraph_color);
+}
 /* banner page start */
 
 .sample_img {
@@ -201,7 +228,7 @@ h5 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   z-index: -1;
@@ -224,15 +251,35 @@ h5 {
 
 .signup_inner a {
   display: inline-block;
-  padding: 10px 50px;
+  padding: 15px 50px;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--clor_three);
+  border: 2px solid var(--clor_three);
+  /* background-color: var(--clor_three); */
   border-radius: 30px;
   color: #fff;
+  position: relative;
+  transition: all 0.5s linear;
+  z-index: 1;
+  overflow: hidden;
 }
 
+.signup_inner a::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clor_three);
+  transform: scale(0);
+  transition: all 0.5s linear;
+  z-index: -1;
+}
+.signup_inner a:hover::before {
+  transform: scale(1);
+}
 .signup_form {
   border-radius: 50px;
   background-color: var(--color_two);
@@ -325,13 +372,74 @@ h5 {
   margin-bottom: 0px !important;
 }
 .footer_contents ul li a:hover {
-  transform: scale(1.08) translateY(-10px);
+  transform: scale(1.08) translateY(-8px);
 }
 .footer_contents p {
   font-size: 16px;
   color: #fff;
 }
+
+.footer_contents p span {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--color_two);
+  text-align: center;
+}
 .footer_section {
   padding: 5px 0;
   background-color: var(--color_two);
 }
+
+/* === */
+
+.tab_content_contents {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 8px -6px #000000;
+  box-shadow: 0px 2px 8px -6px #000000;
+  padding: 8px;
+  text-align: left;
+  height: 280px;
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.tab_content_contents:hover {
+  transform: translateY(-9px);
+}
+.number h2 {
+  font-size: 55px !important;
+  font-weight: 700;
+  color: var(--color_two);
+}
+.number h4 a {
+  color: var(--color_two);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.tab_content_list ul li {
+  display: inline-block;
+}
+
+.tab_content_list ul li a {
+  font-size: 14px;
+  color: var(--paragraph_color);
+}
+
+/* .tab_content_body {
+  position: relative;
+  overflow: hidden;
+}
+
+.tab_content_body::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 3px;
+  background-color: var(--clor_three);
+} */
