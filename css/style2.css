@@ -418,6 +418,10 @@ h5 {
   color: var(--color_two);
   text-transform: uppercase;
   font-weight: 700;
+  transition: all 0.3s linear;
+}
+.number h4 a:hover {
+  color: #0e76a8;
 }
 .tab_content_list ul li {
   display: inline-block;
@@ -426,6 +430,12 @@ h5 {
 .tab_content_list ul li a {
   font-size: 14px;
   color: var(--paragraph_color);
+  transition: all 0.3s linear;
+}
+
+.tab_content_list ul li a:hover {
+  color: #0e76a8;
+  font-weight: 700;
 }
 
 /* .tab_content_body {
