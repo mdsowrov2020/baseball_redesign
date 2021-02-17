@@ -186,7 +186,7 @@ h5 {
 }
 
 .signup_banner {
-  padding: 80px 0;
+  padding: 50px 0;
   width: 100% !important;
   background-position: center !important;
   background-size: cover !important;
@@ -202,8 +202,8 @@ h5 {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   z-index: -1;
 }
 .signup_content {
@@ -235,7 +235,7 @@ h5 {
 
 .signup_form {
   border-radius: 50px;
-  background-color: var(--color_one);
+  background-color: var(--color_two);
   margin-top: 20px;
   opacity: 0;
   visibility: hidden;
@@ -271,4 +271,39 @@ h5 {
   opacity: 1;
   transition: all 0.6s linear;
   height: auto;
+}
+
+.footer_contents ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer_contents ul li a {
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--clor_three);
+  font-size: 16px;
+  /* -webkit-box-shadow: -12px 18px 28px -7px #cecece;
+  box-shadow: -12px 18px 28px -7px #cecece; */
+  transition: all 0.7s linear;
+}
+
+.footer_contents ul {
+  margin-bottom: 0px !important;
+}
+.footer_contents ul li a:hover {
+  transform: scale(1.08) translateY(-10px);
+}
+.footer_contents p {
+  font-size: 16px;
+  color: #fff;
+}
+.footer_section {
+  padding: 10px 0;
+  background-color: var(--color_two);
 }
