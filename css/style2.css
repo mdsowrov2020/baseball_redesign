@@ -516,16 +516,16 @@ h5 {
 }
 
 .table_body {
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 25px;
-  padding: 20px 0;
+  padding: 20px;
   -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
   -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
   box-shadow: 0px 10px 30px #2b56f524 !important;
 }
 
 table {
-  border-radius: 5px !important;
+  border-radius: 10px !important;
 }
 
 .nav-tabs .nav-link.active {
