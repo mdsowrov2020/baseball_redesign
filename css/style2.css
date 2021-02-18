@@ -495,8 +495,9 @@ h5 {
 }
 
 .all_links {
-  padding: 10px;
+  /* padding: 10px; */
   border-radius: 20px;
+
   /* -webkit-box-shadow: 0px 10px 30px #2b56f524 !important;
   -moz-box-shadow: 0px 10px 30px #2b56f524 !important;
   box-shadow: 0px 10px 30px #2b56f524 !important; */
@@ -553,10 +554,11 @@ table {
 /* collupse */
 
 .collapsible {
-  background-color: #fff;
+  /* background-color: #c0fcde; */
+  background-color: #e3fdf0;
   color: var(--paragraph_color);
   cursor: pointer;
-  padding: 18px;
+  padding: 25px 18px;
   width: 100%;
   border: none !important;
   text-align: left;
@@ -570,7 +572,8 @@ table {
 
 .active_mlb,
 .collapsible:hover {
-  background-color: #ccc;
+  /* background-color: #e3fdf0; */
+  background-color: #c0fcde;
 }
 
 .mlbs_content {
