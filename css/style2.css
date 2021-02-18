@@ -508,11 +508,11 @@ h5 {
   margin: 2px;
 }
 .all_links ul li a {
-  font-size: 12px;
+  font-size: 16px;
   display: inline-block;
   padding: 4px 15px;
-  background-color: var(--color_one);
-  color: #fff;
+  /* background-color: var(--color_one); */
+  color: var(--paragraph_color);
   border-radius: 30px;
 }
 
@@ -582,7 +582,11 @@ table {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  /* margin-top: 25px; */
+  margin-top: 25px;
+}
+
+.mlb_all_links li a:first-child {
+  padding-left: 0px !important;
 }
 
 .collapsible:after {
