@@ -326,9 +326,9 @@ h5 {
 }
 .go_btn {
   text-align: center;
-  /* display: block; */
+  display: block;
   height: 50px;
-  width: 200px;
+  width: 100%;
   margin: auto;
   padding: 8px 0;
   border-radius: 30px;
