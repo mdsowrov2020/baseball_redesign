@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="DataTables/datatables.css">
+</head>
+<body>
+  <!-- top header part start -->
+  <section class="top_header_section">
+    <div class="container">
+        <div class="top_header_left">
+            <div class="top_header_logo">
+                <a href="">
+                    <img src="images/oliver/Flash Stats- Oliver-03.jpg" alt="" class="img-responsive img-fluid">
+                </a>
+            </div>
+        </div>
+        <div class="top_header_right">
+            <h2>Oliver Projections<sup>TM</sup></h2>
+        </div>
+    </div>
+</section>
+    <!-- top header part end -->
+ 
+    <!-- Menu part start -->
+
+<header class="cutom_nav">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light px-0 menu_nav">
+        <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/oliver/Baseball Icons-Oliver-01.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/oliver/Baseball Icons-Oliver-02.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/oliver/Flash Stats- Oliver-01.jpg" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/oliver/Flash Stats- Oliver-02.jpg" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/oliver/Baseball Icons-Oliver-03.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/oliver/Baseball Icons-Oliver-04.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link srch_btn" href="javscript:void(0)"><img src="images/oliver/Baseball Icons-Oliver-05.png" alt="">
+
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+</nav>
+  </div>
+  <div class="search_box">
+   <form action="">
+    <div class="form-group">
+        <input type="text" class="form-control search_control"  placeholder="Search here">
+      </div>
+   </form>
+   <div class="close_search">
+       <img src="images/x-button.svg" alt="">
+   </div>
+</div>
+</header>
+
+<!-- Menu part end -->  
+    
+<!-- Seasons info part start -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="season_body">
+                    <div class="season_team">
+                        <h4>2020 Tampa Bay Rays Statistics</h4>
+                    </div>
+                    <div class="season py-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                               <div class="season_year">
+                                <h4>2019 <span>Season</span></h4>
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="form-group ">
+                                        <select id="" class="form-control custom_control">
+                                          <option selected>Select Season</option>
+                                          <option>2018</option>
+                                        </select>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record">
+                        <h4>Record</h4>
+                        <h5>40-20</h5>
+                        <p><span>1st place in</span> <a href="">AL_East (Schedule and Results)</a></p>
+                    </div>
+                    <div class="post_season py-3">
+                        <h4>Post Season</h4>
+                        <div class="post_season_info">
+                            <table class="table  table-bordered ">
+                                <thead>
+                                  <tr align="center">
+                                    <th scope="col">Lost</th>
+                                    <th scope="col">Won</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><a href="">World Series (4-2)</a> to <a href=""> Los Angeles Dodgers</a></td>
+                                    <td><a href="">AL Championship Series (4-3) </a> to <a href=""> Los Angeles Dodgers</a></td>
+                                  </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="team_manage_info">
+                        <h4>Manager : <span><a href="">Kevin Cash </a> 40-20</span></h4>
+                        <h4>General Manager : <span><a href=""> </a> Erik Neander (Senior VP, Baseball Ops & GM)</span></h4>
+                        <h4>Farm Director : <span><a href=""></a> Jeff McLerran</span></h4>
+                        <h4>Scouting Director : <span><a href=""></a> Rob Metzler</span></h4>
+                        <h4>Ballpark : <span><a href=""></a> Tropicana Field</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Seasons info part end -->
+
+<!-- Team pitching part start -->
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Extn.</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <!-- <table id="pitching" class="display nowrap table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Rk</th>
+                            <th scope="col">Pos</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">W</th>
+                            <th scope="col">L</th>
+                            <th scope="col">W-L%</th>
+                            <th scope="col">ERA</th>
+                            <th scope="col">G</th>
+                            <th scope="col">GS</th>
+                            <th scope="col">GF</th>
+                            <th scope="col">CG</th>
+                            <th scope="col">SHO</th>
+                            <th scope="col">SV</th>
+                            <th scope="col">IP</th>
+                            <th scope="col">H</th>
+                            <th scope="col">R</th>
+                            <th scope="col">ER</th>
+                            <th scope="col">HR</th>
+                            <th scope="col">BB</th>
+                            <th scope="col">IBB</th>
+                            <th scope="col">SO</th>
+                            <th scope="col">HBP</th>
+                            <th scope="col">BK</th>
+                            <th scope="col">WP</th>
+                            <th scope="col">BF</th>
+                            <th scope="col">ERA+</th>
+                            <th scope="col">FIP</th>
+                            <th scope="col">WHIP</th>
+                            <th scope="col">H9</th>
+                            <th scope="col">HR9</th>
+                            <th scope="col">BB9</th>
+                            <th scope="col">SO9</th>
+                            <th scope="col">SO/W</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                        </tr>
+
+                     
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                        </tr>
+                    </tfoot>
+                </table> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team pitching part end -->
+
+<!-- footer part start -->
+<footer class="footer_section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 py-2 d-flex align-items-center">
+                <div class="footer_contents d-flex align-items-center">
+                    <p><span class=" mr-1"><i class="far fa-envelope"></i></span> your@mail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-2 d-flex align-items-center">
+                <div class="footer_contents d-flex align-items-center">
+                    <p><span class="mr-1"><i class="fas fa-phone-alt "></i></span> 0154545454</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="footer_contents d-flex align-items-center">
+                   <ul>
+                       <li><a href="" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                       <li><a href="" class="tw"><i class="fab fa-twitter"></i></a></li>
+                       <li><a href="" class="ln"><i class="fab fa-linkedin-in"></i></a></li>
+                       <li><a href="" class="insta"><i class="fab fa-instagram"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer part end -->
+
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="DataTables/datatables.js"></script>
+<script src="js/script2.js"></script>
+
+</body>
+</html>

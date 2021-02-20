@@ -600,3 +600,54 @@ table {
 .active_mlb:after {
   content: '\2796';
 }
+
+/* team page start */
+
+.season_team h4 {
+  color: var(--color_two);
+  font-weight: 700;
+}
+
+.season_year {
+  -webkit-clip-path: polygon(100% 0, 95% 46%, 100% 98%, 0% 100%, 6% 48%, 0% 0%);
+  clip-path: polygon(100% 0, 95% 46%, 100% 98%, 0% 100%, 6% 48%, 0% 0%);
+  background-color: #ea8bee;
+  display: inline-block;
+  padding: 10px 35px;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+}
+
+.season_year h4 {
+  color: #fff;
+  font-size: 14px !important;
+}
+
+.custom_control {
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 30px;
+  border: none !important;
+  font-size: 14px;
+  /* border: 1px solid var(--paragraph_color) !important; */
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(181, 181, 181, 0.52) !important;
+  box-shadow: 0px 1px 3px 2px rgba(181, 181, 181, 0.52) !important;
+}
+
+.team_manage_info h4 {
+  padding: 4px 0;
+}
+.team_manage_info {
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  padding: 10px;
+  border-radius: 10px;
+}
+.team_manage_info h4 span {
+  color: var(--paragraph_color) !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
