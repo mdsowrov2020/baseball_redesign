@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
-    <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="DataTables/DataTables-1.10.23/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="DataTables/DataTables-1.10.23/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="DataTables/datatables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
   <!-- top header part start -->
@@ -117,17 +124,17 @@
                     <div class="post_season py-3">
                         <h4>Post Season</h4>
                         <div class="post_season_info">
-                            <table class="table  table-bordered ">
+                            <table class="table  table-bordered table-hover table-striped ">
                                 <thead>
-                                  <tr align="center">
+                                  <tr align="center" style="color: #6b6b6b;">
                                     <th scope="col">Lost</th>
                                     <th scope="col">Won</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                                   <tr>
-                                    <td><a href="">World Series (4-2)</a> to <a href=""> Los Angeles Dodgers</a></td>
-                                    <td><a href="">AL Championship Series (4-3) </a> to <a href=""> Los Angeles Dodgers</a></td>
+                                    <td><a href="" style="color: #ff7658;">World Series (4-2)</a> to <a href="" style="color: #ff7658;"> Los Angeles Dodgers</a></td>
+                                    <td><a href="" style="color: #ff7658;">AL Championship Series (4-3) </a> to <a href="" style="color: #ff7658;"> Los Angeles Dodgers</a></td>
                                   </tr>
 
                                 </tbody>
@@ -154,31 +161,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <table id="example" class="display" style="width:100%">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Extn.</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Extn.</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                        </tr>
-                    </tfoot>
-                </table>
-                <!-- <table id="pitching" class="display nowrap table">
-                    <thead>
-                        <tr>
+                <div class="pitching">
+                    <h4>Team Pitching 
+                    </h4>
+                </div>
+              <div class="pitching_table">
+                <table id="pitching" class=" table table-bordered dt-responsive table-responsive nowrap display"  width="100%" style="font-size: 11px !important;">
+                    <thead >
+                        <tr style="color: brown !important;">
                             <th scope="col">Rk</th>
                             <th scope="col">Pos</th>
                             <th scope="col">Name</th>
@@ -217,57 +207,87 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
+                            <td>1</td>
+                            <td>C</td>
+                            <td>Michael Perez*</td>
+                            <td>27</td>
+                            <td>38</td>
+                            <td>93</td>
+                            <td>84</td>
+                            <td>7</td>
+                            <td>14</td>
+                            <td>03</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>7</td>
                             <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
+                            <td>27</td>
+                            <td>.167</td>
+                            <td>.237</td>
+                            <td>.238</td>
+                            <td>.238</td>
+                            <td>34</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+
                         </tr>
 
-                     
-                    </tbody>
-                    <tfoot>
                         <tr>
-                            <th>Name</th>
-                            <th>Position</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
+                            <td>1</td>
+                            <td>C</td>
+                            <td>Michael Perez*</td>
+                            <td>27</td>
+                            <td>38</td>
+                            <td>93</td>
+                            <td>84</td>
+                            <td>7</td>
+                            <td>14</td>
+                            <td>03</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>7</td>
+                            <td>61</td>
+                            <td>27</td>
+                            <td>.167</td>
+                            <td>.237</td>
+                            <td>.238</td>
+                            <td>.238</td>
+                            <td>34</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>03</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+
                         </tr>
-                    </tfoot>
-                </table> -->
+
+
+                    </tbody>
+                </table>
+              </div>
+            
+               
             </div>
         </div>
     </div>
@@ -275,6 +295,8 @@
 
 <!-- Team pitching part end -->
 
+
+<a id="button"><i class="fas fa-arrow-up"></i></a>
 <!-- footer part start -->
 <footer class="footer_section">
     <div class="container">
@@ -309,6 +331,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/all.min.js"></script>
 <script src="DataTables/datatables.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
+<script src="js/all.min.js"></script>
 <script src="js/script2.js"></script>
 
 </body>
