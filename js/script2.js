@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 $('.srch_btn').click(function () {
   $('.search_box').toggleClass('active').focus;
   $('.close_search').toggleClass('active').focus;
