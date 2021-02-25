@@ -919,3 +919,24 @@ table.dataTable.no-footer {
 .latest_result h5 {
   color: var(--paragraph_color);
 }
+
+.all_tab_sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1200;
+}
+
+#all_tab {
+  background-color: var(--color_two);
+}
+
+.all_tab_menu li a {
+  color: #fff !important;
+  font-size: 14px;
+}
+
+.all_tabs_logo a {
+  color: #fff !important;
+  font-size: 14px;
+}
