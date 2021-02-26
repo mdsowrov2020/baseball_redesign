@@ -81,3 +81,19 @@ function myFunction() {
     navbar.classList.remove('all_tab_sticky');
   }
 }
+
+// Data table
+
+$('#s_pitching').DataTable({
+  responsive: true,
+  select: true,
+  // ordering: false,
+});
+
+$('#projection').DataTable({
+  responsive: true,
+  select: true,
+  dom: 'Bfrtip',
+  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  // ordering: false,
+});

@@ -11,6 +11,9 @@
   padding: 0;
   outline: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --color_one: #11a3aa;
   --color_two: #484848;
@@ -1040,4 +1043,58 @@ table.dataTable.no-footer {
 
 .canvasjs-chart-credit {
   visibility: hidden !important;
+}
+
+.summary_table {
+  border-radius: 2px !important;
+}
+
+.projecttion {
+  background-color: #fde1ff;
+}
+.projecttion h4 {
+  color: var(--heading_color);
+  text-transform: uppercase;
+}
+
+.player_tab_inner {
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  padding: 25px 0;
+}
+
+.tab_content ul {
+  margin-bottom: 0px !important;
+}
+
+.tab_content ul li {
+  display: inline-block;
+}
+
+.tab_content ul li a {
+  color: var(--paragraph_color);
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+  /* padding: 8px 25px;
+  border-radius: 3px;
+  background-color: #e8f3fc; */
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+.tab_content ul li a:hover {
+  color: #405de6;
+  letter-spacing: 1px;
+}
+
+.dt-button {
+  padding: 5px 25px !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: #097d91 !important;
+  color: #fff !important;
+  border-radius: 3px !important;
+  font-size: 14px;
 }
