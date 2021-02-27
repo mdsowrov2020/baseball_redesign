@@ -314,13 +314,13 @@
 <section class="pb-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-7 py-2  d-flex align-items-center">
+            <div class="col-md-7 py-2 ">
                 <div class="summary_table">
                     <div class="card_heading player_name_first">
                         <p>PRESEASON STATS</p>
                     </div>
                     <div class="table_body summary_table_body">
-                        <table class="table summary_table  table-striped  table-borderless " style="font-size: 14px;">
+                        <table class="table summary_table  table-striped  table-borderless " style="font-size: 12px;">
                             <thead>
                               <tr>
                                 <th scope="col">SUMMARY</th>
@@ -389,6 +389,19 @@
                                 <td>100</td>
                                 <td>0.795</td>
                               </tr>
+                              <tr>
+                                <td>2017</td>
+                                <td>2.7</td>
+                                <td>5</td>
+                                <td>4</td>
+                                <td>1.73</td>
+                                <td>11</td>
+                                <td>11</td>
+                                <td>0</td>
+                                <td>73.0</td>
+                                <td>100</td>
+                                <td>0.795</td>
+                              </tr>
                             </tbody>
                         </table>
                 </div>
@@ -403,194 +416,331 @@
     </div>
 </section>
 
-
-<!-- sticky part start -->
-<section class="pb-5" >
-<div class="player_tab" id="all_tab">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light all_tabs_logo">
-            <a class="navbar-brand" href="#">Trevor Bauer Overview</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto all_tab_menu">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">
-                    College & Minor Lg Stats</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Uniform</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contracts</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </div>
-</div>
-<div class="player_tab_inner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 d-flex align-items-center">
-                <div class="tab_content d-flex align-items-center">
-                    <ul>
-                        <li><a href="#projection_table">Projection</a></li>
-                        <li><a href="#s_pitching_table">Standard Pitching</a></li>
-                        <li><a href="#splits">Splits</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    </section>
     <section class="py-5" id="s_pitching_table">
         <div class="container">
             <div class="row justify-content-center">
+
                 <div class="col-md-12">
-                    <div class="custom_card">
-                        <div class="card_heading projecttion">
-                            <h4>Standard Pitching</span>
-                            </h4>
-                            
+                    <div class="dt_tables_main">
+                        <div class="player_tab" id="all_tab">
+                            <div class="container">
+                                <nav class="navbar navbar-expand-lg navbar-light all_tabs_logo">
+                                    <a class="navbar-brand" href="#">Trevor Bauer Overview</a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                  
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                      <ul class="navbar-nav ml-auto all_tab_menu">
+                                        <li class="nav-item active">
+                                          <a class="nav-link" href="#">
+                                            College & Minor Lg Stats</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Uniform</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Dropdown
+                                          </a>
+                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                          </div>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#">Contracts</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </nav>
+                            </div>
                         </div>
-                        <div class="pitching_table pt-3">
-                            <table id="s_pitching" class=" table table-bordered dt-responsive table-responsive nowrap display"  width="100%" style="font-size: 11px !important;">
-                                <thead >
-                                    <tr style="color: brown !important;">
-                                        <th scope="col">
-                                            Year</th>
-                                        <th scope="col">Tm</th>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Age</th>
-                                        <th scope="col">W</th>
-                                        <th scope="col">L</th>
-                                        <th scope="col">W-L%</th>
-                                        <th scope="col">ERA</th>
-                                        <th scope="col">G</th>
-                                        <th scope="col">GS</th>
-                                        <th scope="col">GF</th>
-                                        <th scope="col">CG</th>
-                                        <th scope="col">SHO</th>
-                                        <th scope="col">SV</th>
-                                        <th scope="col">IP</th>
-                                        <th scope="col">H</th>
-                                        <th scope="col">R</th>
-                                        <th scope="col">ER</th>
-                                        <th scope="col">HR</th>
-                                        <th scope="col">BB</th>
-                                        <th scope="col">IBB</th>
-                                        <th scope="col">SO</th>
-                                        <th scope="col">HBP</th>
-                                        <th scope="col">BK</th>
-                                        <th scope="col">WP</th>
-                                        <th scope="col">BF</th>
-                                        <th scope="col">ERA+</th>
-                                        <th scope="col">FIP</th>
-                                        <th scope="col">WHIP</th>
-                                        <th scope="col">H9</th>
-                                        <th scope="col">HR9</th>
-                                        <th scope="col">BB9</th>
-                                        <th scope="col">SO9</th>
-                                        <th scope="col">SO/W</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>C</td>
-                                        <td>Michael Perez*</td>
-                                        <td>27</td>
-                                        <td>38</td>
-                                        <td>93</td>
-                                        <td>84</td>
-                                        <td>7</td>
-                                        <td>14</td>
-                                        <td>03</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>13</td>
-                                        <td>0</td>
-                                        <td>7</td>
-                                        <td>61</td>
-                                        <td>27</td>
-                                        <td>.167</td>
-                                        <td>.237</td>
-                                        <td>.238</td>
-                                        <td>.238</td>
-                                        <td>34</td>
-                                        <td>20</td>
-                                        <td>03</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>20</td>
-                                        <td>03</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>0</td>
-            
-                                    </tr>
-            
-                                    <tr>
-                                        <td>1</td>
-                                        <td>C</td>
-                                        <td>Michael Perez*</td>
-                                        <td>27</td>
-                                        <td>38</td>
-                                        <td>93</td>
-                                        <td>84</td>
-                                        <td>7</td>
-                                        <td>14</td>
-                                        <td>03</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>13</td>
-                                        <td>0</td>
-                                        <td>7</td>
-                                        <td>61</td>
-                                        <td>27</td>
-                                        <td>.167</td>
-                                        <td>.237</td>
-                                        <td>.238</td>
-                                        <td>.238</td>
-                                        <td>34</td>
-                                        <td>20</td>
-                                        <td>03</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>20</td>
-                                        <td>03</td>
-                                        <td>1</td>
-                                        <td>0</td>
-                                        <td>1</td>
-                                        <td>0</td>
-            
-                                    </tr>
-            
-            
-                                </tbody>
-                            </table>
-                          </div>
+                        <div class="tab_content d-flex align-items-center">
+                            <ul>
+                                <li><a href="#projection_table">Projection</a></li>
+                                <li><a href="#s_pitching_table">Standard Pitching</a></li>
+                                <li><a href="#splits">Splits</a></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="custom_card">
+                                    
+                                    <div class="card_heading projecttion">
+                                        <h4>Standard Pitching</span>
+                                        </h4>
+                                        
+                                    </div>
+                                    <div class="pitching_table pt-3">
+                                        <table id="s_pitching" class=" table table-bordered dt-responsive table-responsive nowrap display"  width="100%" style="font-size: 11px !important;">
+                                            <thead >
+                                                <tr style="color: brown !important;">
+                                                    <th scope="col">
+                                                        Year</th>
+                                                    <th scope="col">Tm</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">W</th>
+                                                    <th scope="col">L</th>
+                                                    <th scope="col">W-L%</th>
+                                                    <th scope="col">ERA</th>
+                                                    <th scope="col">G</th>
+                                                    <th scope="col">GS</th>
+                                                    <th scope="col">GF</th>
+                                                    <th scope="col">CG</th>
+                                                    <th scope="col">SHO</th>
+                                                    <th scope="col">SV</th>
+                                                    <th scope="col">IP</th>
+                                                    <th scope="col">H</th>
+                                                    <th scope="col">R</th>
+                                                    <th scope="col">ER</th>
+                                                    <th scope="col">HR</th>
+                                                    <th scope="col">BB</th>
+                                                    <th scope="col">IBB</th>
+                                                    <th scope="col">SO</th>
+                                                    <th scope="col">HBP</th>
+                                                    <th scope="col">BK</th>
+                                                    <th scope="col">WP</th>
+                                                    <th scope="col">BF</th>
+                                                    <th scope="col">ERA+</th>
+                                                    <th scope="col">FIP</th>
+                                                    <th scope="col">WHIP</th>
+                                                    <th scope="col">H9</th>
+                                                    <th scope="col">HR9</th>
+                                                    <th scope="col">BB9</th>
+                                                    <th scope="col">SO9</th>
+                                                    <th scope="col">SO/W</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>C</td>
+                                                    <td>Michael Perez*</td>
+                                                    <td>27</td>
+                                                    <td>38</td>
+                                                    <td>93</td>
+                                                    <td>84</td>
+                                                    <td>7</td>
+                                                    <td>14</td>
+                                                    <td>03</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>13</td>
+                                                    <td>0</td>
+                                                    <td>7</td>
+                                                    <td>61</td>
+                                                    <td>27</td>
+                                                    <td>.167</td>
+                                                    <td>.237</td>
+                                                    <td>.238</td>
+                                                    <td>.238</td>
+                                                    <td>34</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                        
+                                                </tr>
+                        
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>C</td>
+                                                    <td>Michael Perez*</td>
+                                                    <td>27</td>
+                                                    <td>38</td>
+                                                    <td>93</td>
+                                                    <td>84</td>
+                                                    <td>7</td>
+                                                    <td>14</td>
+                                                    <td>03</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>13</td>
+                                                    <td>0</td>
+                                                    <td>7</td>
+                                                    <td>61</td>
+                                                    <td>27</td>
+                                                    <td>.167</td>
+                                                    <td>.237</td>
+                                                    <td>.238</td>
+                                                    <td>.238</td>
+                                                    <td>34</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                        
+                                                </tr>
+                        
+                        
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pt-5">
+                                <div class="custom_card">
+                                    <div class="card_heading projecttion">
+                                        <h4>Projections <span>(This stats only accessible by premium users)</span>
+                                        </h4>
+                                        
+                                    </div>
+                                    <div class="pitching_table pt-3">
+                                        <table id="projection" class=" table table-bordered dt-responsive table-responsive nowrap display"  width="100%" style="font-size: 11px !important;">
+                                            <thead >
+                                                <tr style="color: brown !important;">
+                                                    <th scope="col">
+                                                        Year</th>
+                                                    <th scope="col">Tm</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Age</th>
+                                                    <th scope="col">W</th>
+                                                    <th scope="col">L</th>
+                                                    <th scope="col">W-L%</th>
+                                                    <th scope="col">ERA</th>
+                                                    <th scope="col">G</th>
+                                                    <th scope="col">GS</th>
+                                                    <th scope="col">GF</th>
+                                                    <th scope="col">CG</th>
+                                                    <th scope="col">SHO</th>
+                                                    <th scope="col">SV</th>
+                                                    <th scope="col">IP</th>
+                                                    <th scope="col">H</th>
+                                                    <th scope="col">R</th>
+                                                    <th scope="col">ER</th>
+                                                    <th scope="col">HR</th>
+                                                    <th scope="col">BB</th>
+                                                    <th scope="col">IBB</th>
+                                                    <th scope="col">SO</th>
+                                                    <th scope="col">HBP</th>
+                                                    <th scope="col">BK</th>
+                                                    <th scope="col">WP</th>
+                                                    <th scope="col">BF</th>
+                                                    <th scope="col">ERA+</th>
+                                                    <th scope="col">FIP</th>
+                                                    <th scope="col">WHIP</th>
+                                                    <th scope="col">H9</th>
+                                                    <th scope="col">HR9</th>
+                                                    <th scope="col">BB9</th>
+                                                    <th scope="col">SO9</th>
+                                                    <th scope="col">SO/W</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>C</td>
+                                                    <td>Michael Perez*</td>
+                                                    <td>27</td>
+                                                    <td>38</td>
+                                                    <td>93</td>
+                                                    <td>84</td>
+                                                    <td>7</td>
+                                                    <td>14</td>
+                                                    <td>03</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>13</td>
+                                                    <td>0</td>
+                                                    <td>7</td>
+                                                    <td>61</td>
+                                                    <td>27</td>
+                                                    <td>.167</td>
+                                                    <td>.237</td>
+                                                    <td>.238</td>
+                                                    <td>.238</td>
+                                                    <td>34</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                        
+                                                </tr>
+                        
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>C</td>
+                                                    <td>Michael Perez*</td>
+                                                    <td>27</td>
+                                                    <td>38</td>
+                                                    <td>93</td>
+                                                    <td>84</td>
+                                                    <td>7</td>
+                                                    <td>14</td>
+                                                    <td>03</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>13</td>
+                                                    <td>0</td>
+                                                    <td>7</td>
+                                                    <td>61</td>
+                                                    <td>27</td>
+                                                    <td>.167</td>
+                                                    <td>.237</td>
+                                                    <td>.238</td>
+                                                    <td>.238</td>
+                                                    <td>34</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>20</td>
+                                                    <td>03</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                        
+                                                </tr>
+                        
+                        
+                                            </tbody>
+                                        </table>
+                                      </div>
+                                </div>
+                                <!-- <div class="pitching">
+                                    <h4>Projections
+                                    </h4>
+                                </div> -->
+                              
+                            
+                               
+                            </div>
+                        </div>
                     </div>
+                   
+
+                 
                     <!-- <div class="pitching">
                         <h4>Projections
                         </h4>
@@ -599,6 +749,7 @@
                 
                    
                 </div>
+              
             </div>
         </div>
     </section>
@@ -606,144 +757,7 @@
 <section class="py-5" id="projection_table">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
-                <div class="custom_card">
-                    <div class="card_heading projecttion">
-                        <h4>Projections <span>(This stats only accessible by premium users)</span>
-                        </h4>
-                        
-                    </div>
-                    <div class="pitching_table pt-3">
-                        <table id="projection" class=" table table-bordered dt-responsive table-responsive nowrap display"  width="100%" style="font-size: 11px !important;">
-                            <thead >
-                                <tr style="color: brown !important;">
-                                    <th scope="col">
-                                        Year</th>
-                                    <th scope="col">Tm</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Age</th>
-                                    <th scope="col">W</th>
-                                    <th scope="col">L</th>
-                                    <th scope="col">W-L%</th>
-                                    <th scope="col">ERA</th>
-                                    <th scope="col">G</th>
-                                    <th scope="col">GS</th>
-                                    <th scope="col">GF</th>
-                                    <th scope="col">CG</th>
-                                    <th scope="col">SHO</th>
-                                    <th scope="col">SV</th>
-                                    <th scope="col">IP</th>
-                                    <th scope="col">H</th>
-                                    <th scope="col">R</th>
-                                    <th scope="col">ER</th>
-                                    <th scope="col">HR</th>
-                                    <th scope="col">BB</th>
-                                    <th scope="col">IBB</th>
-                                    <th scope="col">SO</th>
-                                    <th scope="col">HBP</th>
-                                    <th scope="col">BK</th>
-                                    <th scope="col">WP</th>
-                                    <th scope="col">BF</th>
-                                    <th scope="col">ERA+</th>
-                                    <th scope="col">FIP</th>
-                                    <th scope="col">WHIP</th>
-                                    <th scope="col">H9</th>
-                                    <th scope="col">HR9</th>
-                                    <th scope="col">BB9</th>
-                                    <th scope="col">SO9</th>
-                                    <th scope="col">SO/W</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>C</td>
-                                    <td>Michael Perez*</td>
-                                    <td>27</td>
-                                    <td>38</td>
-                                    <td>93</td>
-                                    <td>84</td>
-                                    <td>7</td>
-                                    <td>14</td>
-                                    <td>03</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>13</td>
-                                    <td>0</td>
-                                    <td>7</td>
-                                    <td>61</td>
-                                    <td>27</td>
-                                    <td>.167</td>
-                                    <td>.237</td>
-                                    <td>.238</td>
-                                    <td>.238</td>
-                                    <td>34</td>
-                                    <td>20</td>
-                                    <td>03</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>20</td>
-                                    <td>03</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>0</td>
-        
-                                </tr>
-        
-                                <tr>
-                                    <td>1</td>
-                                    <td>C</td>
-                                    <td>Michael Perez*</td>
-                                    <td>27</td>
-                                    <td>38</td>
-                                    <td>93</td>
-                                    <td>84</td>
-                                    <td>7</td>
-                                    <td>14</td>
-                                    <td>03</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>13</td>
-                                    <td>0</td>
-                                    <td>7</td>
-                                    <td>61</td>
-                                    <td>27</td>
-                                    <td>.167</td>
-                                    <td>.237</td>
-                                    <td>.238</td>
-                                    <td>.238</td>
-                                    <td>34</td>
-                                    <td>20</td>
-                                    <td>03</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>20</td>
-                                    <td>03</td>
-                                    <td>1</td>
-                                    <td>0</td>
-                                    <td>1</td>
-                                    <td>0</td>
-        
-                                </tr>
-        
-        
-                            </tbody>
-                        </table>
-                      </div>
-                </div>
-                <!-- <div class="pitching">
-                    <h4>Projections
-                    </h4>
-                </div> -->
-              
-            
-               
-            </div>
+          
         </div>
     </div>
 </section>
