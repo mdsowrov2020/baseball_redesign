@@ -24,7 +24,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
 }
 
 ul,
@@ -1214,6 +1214,13 @@ table.dataTable.no-footer {
   height: 200px;
   /* overflow-y: scroll; */
 }
+.team_two p,
+.team_one p {
+  font-size: 12px;
+  color: var(--color_two);
+  font-weight: 700;
+  padding-bottom: 5px;
+}
 
 /* .pl_standings::-webkit-scrollbar {
   width: 3px !important;
@@ -1227,3 +1234,17 @@ table.dataTable.no-footer {
 .pl_standings::-webkit-scrollbar-thumb {
   background: var(--paragraph_color) !important;
 } */
+
+.summary_table h4 {
+  font-weight: 700;
+  color: var(--color_two);
+  text-transform: uppercase;
+}
+
+.bar_body {
+  padding: 8px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  border-radius: 0px 0px 20px 20px;
+}
