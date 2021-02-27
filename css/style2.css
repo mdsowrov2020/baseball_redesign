@@ -24,6 +24,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
 }
 
 ul,
@@ -548,6 +549,10 @@ h5 {
   box-shadow: 0px 10px 30px #2b56f524 !important;
 }
 
+.summary_table_body {
+  background-color: #fff;
+}
+
 table {
   border-radius: 10px !important;
 }
@@ -700,6 +705,11 @@ table {
 /* .pitching_table {
   overflow-x: scroll;
 } */
+
+.pitching_table {
+  padding: 20px;
+  background-color: #fff;
+}
 
 .table-responsive::-webkit-scrollbar {
   height: 5px !important;
@@ -973,6 +983,11 @@ table.dataTable.no-footer {
   box-shadow: 0px 10px 30px #2b56f524;
   padding: 20px;
   height: 450px;
+  background-color: #fff;
+}
+.player_img_body {
+  background-color: #fff;
+  border-radius: 20px;
 }
 .player_left p {
   color: var(--color_two);
@@ -1004,14 +1019,14 @@ table.dataTable.no-footer {
 
 .player_social ul li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 2px;
 }
 
 .player_social ul li a {
   display: inline-block;
-  height: 50px;
-  line-height: 50px;
-  width: 50px;
+  height: 45px;
+  line-height: 45px;
+  width: 45px;
   border-radius: 50%;
   color: #fff;
   font-size: 16px;
@@ -1028,6 +1043,7 @@ table.dataTable.no-footer {
   box-shadow: 0px 10px 30px #2b56f524;
   padding-bottom: 20px;
   height: 450px;
+  overflow: hidden;
 }
 .player_img {
   height: 300px;
@@ -1099,3 +1115,115 @@ table.dataTable.no-footer {
   border-radius: 3px !important;
   font-size: 14px;
 }
+
+.table-striped {
+  border: none !important;
+}
+
+.desig {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #d7ecff;
+  -webkit-box-shadow: 0px 8px 30px #2b56f524;
+  -moz-box-shadow: 0px 8px 30px #2b56f524;
+  box-shadow: 0px 8px 30px #2b56f524;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.desig p {
+  color: var(--paragraph_color);
+}
+
+.next_match_teams {
+  display: flex;
+}
+
+.team_one,
+.versus,
+.team_two {
+  width: 33.33%;
+  height: 80px;
+  padding: 10px;
+  text-align: center;
+}
+
+.team_two img,
+.team_one img {
+  height: 100%;
+  width: 100%;
+}
+
+.ver_content {
+  margin: auto;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 30px #2b56f524;
+  -moz-box-shadow: 0px 8px 30px #2b56f524;
+  box-shadow: 0px 8px 30px #2b56f524;
+  padding: 10px;
+}
+
+.ver_content h2 {
+  font-size: 28px !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--heading_color);
+}
+
+.next_match_teams {
+  padding: 8px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  background-color: #fff;
+  margin-top: 23px;
+}
+
+.game_date {
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+}
+
+.game_date p {
+  color: var(--paragraph_color);
+  font-size: 14px;
+}
+
+.custom_standing_table td {
+  padding: 6px 2px !important;
+}
+
+.custom_standing_table th {
+  padding: 2px !important;
+}
+
+.pl_standings {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 5px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  border-radius: 0px 0px 20px 20px;
+  height: 200px;
+  /* overflow-y: scroll; */
+}
+
+/* .pl_standings::-webkit-scrollbar {
+  width: 3px !important;
+  cursor: pointer;
+}
+
+.pl_standings::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.pl_standings::-webkit-scrollbar-thumb {
+  background: var(--paragraph_color) !important;
+} */
