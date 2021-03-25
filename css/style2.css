@@ -1,5 +1,6 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
 
 @import url('../css/bootstrap.min.css');
 @import url('../css/all.min.css');
@@ -23,7 +24,8 @@ html {
   --color_four: #03424f;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
   /* background-color: #f5f5f5; */
 }
 
@@ -1267,3 +1269,73 @@ table.dataTable.no-footer {
   border: 1px solid #f5f5f5;
   padding: 10px 5px;
 } */
+
+/* ================== score board part start =================== */
+
+.scoreboard_banner {
+  height: 45vh;
+  background-image: url(../images/banner4.jpg);
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.scoreboard_banner::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.scorecard_conatiner {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scoreboard_title h2 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.team_score {
+  text-align: center;
+  width: 100%;
+}
+
+.team_score p {
+  padding: 4px 9px;
+  border-radius: 3px;
+  background-color: #fde1ff;
+  display: inline-block;
+  color: #484848;
+}
+
+.teams_score_body {
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  padding: 0 5px;
+}
+
+.top_teams_part {
+  background-color: rgb(219, 228, 255);
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.score_cart p {
+  padding: 10px 0;
+  color: rgb(165, 163, 163);
+  font-size: 13px;
+}

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Board</title>
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Menu part start -->
+
+    <header class="cutom_nav">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light px-0 menu_nav">
+          <!-- <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mynav"
+            aria-controls="mynav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mynav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/oliver/Baseball Icons-Oliver-01.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/oliver/Baseball Icons-Oliver-02.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/oliver/Flash Stats- Oliver-01.jpg" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/oliver/Flash Stats- Oliver-02.jpg" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/oliver/Baseball Icons-Oliver-03.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><img src="images/oliver/Baseball Icons-Oliver-04.png" alt=""
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link srch_btn" href="javscript:void(0)"
+                  ><img
+                    src="images/oliver/Baseball Icons-Oliver-05.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="search_box">
+        <form action="">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control search_control"
+              placeholder="Search here"
+            />
+          </div>
+        </form>
+        <div class="close_search">
+          <img src="images/x-button.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu part end -->
+
+    <!-- banner part start -->
+
+    <section>
+      <div class="scoreboard_banner" id="parallax">
+        <div class="scorecard_conatiner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="scoreboard_title">
+                    <h2>Schedule / <span>Score Board</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- Score section start -->
+
+    <section class="py-5 score_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 py-3">
+                    <div class="teams_score_body">
+                        <div class="top_teams_part">
+                            <div class="row justify-content-center py-3">
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_LG.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="team_name_score">
+                                        <p>DOOSAN</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center">
+                                    <div class="team_score">
+                                        <p>13:00</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4  py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_name_score">
+                                        <p>LG</p>
+                                    </div>
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_OB.png" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score_cart">
+                            <p>JAMSIL <span>13:00</span></p>
+                            <div class="score_table table-responsive">
+                                <table class="table table-sm" style="font-size: 13px;">
+                                    <thead style="background-color: rgb(233, 250, 252);">
+                                      <tr>
+                                        <th scope="col">TEAM</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">7</th>
+                                        <th scope="col">8</th>
+                                        <th scope="col">9</th>
+                                        <th scope="col">10</th>
+                                        <th scope="col">11</th>
+                                        <th scope="col">12</th>
+                                        <th scope="col">13</th>
+                                        <th scope="col">14</th>
+                                        <th scope="col">15</th>
+                                        <th scope="col">R</th>
+                                        <th scope="col">H</th>
+                                        <th scope="col">E</th>
+                                        <th scope="col">B</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">DOOSAN</th>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">LG</th>
+                                        <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 py-3">
+                    <div class="teams_score_body">
+                        <div class="top_teams_part">
+                            <div class="row justify-content-center py-3">
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_LG.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="team_name_score">
+                                        <p>DOOSAN</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center">
+                                    <div class="team_score">
+                                        <p>13:00</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4  py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_name_score">
+                                        <p>LG</p>
+                                    </div>
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_OB.png" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score_cart">
+                            <p>JAMSIL <span>13:00</span></p>
+                            <div class="score_table table-responsive">
+                                <table class="table table-sm" style="font-size: 13px;">
+                                    <thead style="background-color: rgb(233, 250, 252);">
+                                      <tr>
+                                        <th scope="col">TEAM</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">7</th>
+                                        <th scope="col">8</th>
+                                        <th scope="col">9</th>
+                                        <th scope="col">10</th>
+                                        <th scope="col">11</th>
+                                        <th scope="col">12</th>
+                                        <th scope="col">13</th>
+                                        <th scope="col">14</th>
+                                        <th scope="col">15</th>
+                                        <th scope="col">R</th>
+                                        <th scope="col">H</th>
+                                        <th scope="col">E</th>
+                                        <th scope="col">B</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">DOOSAN</th>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">LG</th>
+                                        <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 py-3">
+                    <div class="teams_score_body">
+                        <div class="top_teams_part">
+                            <div class="row justify-content-center py-3">
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_LG.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="team_name_score">
+                                        <p>DOOSAN</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center">
+                                    <div class="team_score">
+                                        <p>13:00</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4  py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_name_score">
+                                        <p>LG</p>
+                                    </div>
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_OB.png" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score_cart">
+                            <p>JAMSIL <span>13:00</span></p>
+                            <div class="score_table table-responsive">
+                                <table class="table table-sm" style="font-size: 13px;">
+                                    <thead style="background-color: rgb(233, 250, 252);">
+                                      <tr>
+                                        <th scope="col">TEAM</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">7</th>
+                                        <th scope="col">8</th>
+                                        <th scope="col">9</th>
+                                        <th scope="col">10</th>
+                                        <th scope="col">11</th>
+                                        <th scope="col">12</th>
+                                        <th scope="col">13</th>
+                                        <th scope="col">14</th>
+                                        <th scope="col">15</th>
+                                        <th scope="col">R</th>
+                                        <th scope="col">H</th>
+                                        <th scope="col">E</th>
+                                        <th scope="col">B</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">DOOSAN</th>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">LG</th>
+                                        <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 py-3">
+                    <div class="teams_score_body">
+                        <div class="top_teams_part">
+                            <div class="row justify-content-center py-3">
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_LG.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="team_name_score">
+                                        <p>DOOSAN</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 py-2 col-12 d-flex align-items-center">
+                                    <div class="team_score">
+                                        <p>13:00</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4  py-2 col-12 d-flex align-items-center justify-content-between">
+                                    <div class="team_name_score">
+                                        <p>LG</p>
+                                    </div>
+                                    <div class="team_logo_score">
+                                        <img src="./images/ebl_h31_OB.png" alt="" class="img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score_cart">
+                            <p>JAMSIL <span>13:00</span></p>
+                            <div class="score_table table-responsive">
+                                <table class="table table-sm" style="font-size: 13px;">
+                                    <thead style="background-color: rgb(233, 250, 252);">
+                                      <tr>
+                                        <th scope="col">TEAM</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">7</th>
+                                        <th scope="col">8</th>
+                                        <th scope="col">9</th>
+                                        <th scope="col">10</th>
+                                        <th scope="col">11</th>
+                                        <th scope="col">12</th>
+                                        <th scope="col">13</th>
+                                        <th scope="col">14</th>
+                                        <th scope="col">15</th>
+                                        <th scope="col">R</th>
+                                        <th scope="col">H</th>
+                                        <th scope="col">E</th>
+                                        <th scope="col">B</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">DOOSAN</th>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                          -
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                        <td>
+                                          
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row" style="background-color: rgb(233, 250, 252);">LG</th>
+                                        <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            -
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                          <td>
+                                            
+                                          </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Score section end -->
+   
+<a id="button"><i class="fas fa-arrow-up"></i></a>
+<!-- footer part start -->
+<footer class="footer_section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 py-2 d-flex align-items-center">
+                <div class="footer_contents d-flex align-items-center">
+                    <p><span class=" mr-1"><i class="far fa-envelope"></i></span> your@mail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-2 d-flex align-items-center">
+                <div class="footer_contents d-flex align-items-center">
+                    <p><span class="mr-1"><i class="fas fa-phone-alt "></i></span> 0154545454</p>
+                </div>
+            </div>
+            <div class="col-md-4 py-2">
+                <div class="footer_contents d-flex align-items-center">
+                   <ul>
+                       <li><a href="" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                       <li><a href="" class="tw"><i class="fab fa-twitter"></i></a></li>
+                       <li><a href="" class="ln"><i class="fab fa-linkedin-in"></i></a></li>
+                       <li><a href="" class="insta"><i class="fab fa-instagram"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer part end -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script2.js"></script>
+    <script>
+      document.addEventListener('scroll', (e) => {
+        let scroll_pos = window.scrollY;
+        const head = document.querySelector('#parallax');
+
+        console.log(scroll_pos);
+        scroll_pos = scroll_pos * -1 * 0.5;
+
+        head.style.backgroundPosition = '0px ' + scroll_pos + 'px';
+      });
+    </script>
+  </body>
+</html>
