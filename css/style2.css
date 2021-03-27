@@ -126,15 +126,15 @@ h5 {
   background-color: #feece6bb;
 }
 #mynav ul li {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 #mynav ul li:last-child {
   margin-right: 0px !important;
   /* position: relative; */
 }
 #mynav ul li a img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   transition: all 0.6s linear;
 }
@@ -1338,4 +1338,44 @@ table.dataTable.no-footer {
   padding: 10px 0;
   color: rgb(165, 163, 163);
   font-size: 13px;
+}
+
+.select_date {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-radius: 15px 0px 15px 0px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
+  padding: 25px 10px;
+}
+
+.select_date button {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+  background-color: #acd7eb;
+  font-size: 14px;
+  color: #646464;
+}
+
+.select_date p {
+  color: #484848;
+  font-size: 16px;
+}
+
+.schedule_table {
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 10px 30px #2b56f524;
+  -moz-box-shadow: 0px 10px 30px #2b56f524;
+  box-shadow: 0px 10px 30px #2b56f524;
 }
