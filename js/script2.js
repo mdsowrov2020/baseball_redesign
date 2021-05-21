@@ -79,6 +79,7 @@ $(document).ready(function () {
 
 $('.srch_btn').click(function () {
   $('.search_box').toggleClass('active').focus;
+  $('.search_body').toggleClass('active').focus;
   $('.close_search').toggleClass('active').focus;
   $(this).toggleClass('animate');
   $('.search_control').val('');
@@ -86,6 +87,7 @@ $('.srch_btn').click(function () {
 
 $('.close_search').click(function () {
   $('.search_box').toggleClass('active').focus;
+  $('.search_body').toggleClass('active').focus;
   $('.search_control').val('');
 });
 
@@ -139,10 +141,20 @@ btn.on('click', function (e) {
 
 // Data table
 
+$('#p_batting').DataTable({
+  responsive: true,
+  select: true,
+  dom: 'Bfrtip',
+  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  ordering: false,
+});
+
 $('#s_pitching').DataTable({
   responsive: true,
   select: true,
-  // ordering: false,
+  dom: 'Bfrtip',
+  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  ordering: false,
 });
 
 $('#projection').DataTable({
@@ -150,7 +162,14 @@ $('#projection').DataTable({
   select: true,
   dom: 'Bfrtip',
   buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
-  // ordering: false,
+  ordering: false,
+});
+$('#s_fielding').DataTable({
+  responsive: true,
+  select: true,
+  dom: 'Bfrtip',
+  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  ordering: false,
 });
 
 // slider

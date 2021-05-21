@@ -13,9 +13,40 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #mynav ul li {
     text-align: center;
     margin-right: 0px !important;
+  }
+  .summary_table_body {
+    overflow-x: scroll;
+  }
+  .player_social ul li a {
+    display: inline-block;
+    height: 35px;
+    line-height: 36px;
+    width: 35px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    background-color: #0e76a8;
+    -webkit-box-shadow: 0px 10px 30px #2b56f524;
+    -moz-box-shadow: 0px 10px 30px #2b56f524;
+    box-shadow: 0px 10px 30px #2b56f524;
+  }
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    font-size: 11px !important;
+  }
+
+  .table th {
+    font-size: 10px !important;
+  }
+  .pitching_table {
+    padding: 0px !important;
+    background-color: #fff;
   }
 }
