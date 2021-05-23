@@ -49,4 +49,10 @@
     padding: 0px !important;
     background-color: #fff;
   }
+  .player_img {
+    height: 286px;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+  }
 }

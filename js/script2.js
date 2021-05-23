@@ -1,3 +1,21 @@
+// ==============================
+window.onscroll = function () {
+  myFunction();
+};
+var navbar = document.getElementById('navbar');
+
+// Get the offset position of the navbar
+// var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > 100) {
+    navbar.classList.add('sticky');
+  } else {
+    navbar.classList.remove('sticky');
+  }
+}
+
 $('.testimonial_slider').slick({
   dots: false,
   infinite: true,
@@ -144,32 +162,36 @@ btn.on('click', function (e) {
 $('#p_batting').DataTable({
   responsive: true,
   select: true,
-  dom: 'Bfrtip',
-  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  // dom: 'Bfrtip',
+  // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
   ordering: false,
+  searching: false,
 });
 
 $('#s_pitching').DataTable({
   responsive: true,
   select: true,
-  dom: 'Bfrtip',
-  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  // dom: 'Bfrtip',
+  // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
   ordering: false,
+  searching: false,
 });
 
 $('#projection').DataTable({
   responsive: true,
   select: true,
-  dom: 'Bfrtip',
-  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  // dom: 'Bfrtip',
+  // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
   ordering: false,
+  searching: false,
 });
 $('#s_fielding').DataTable({
   responsive: true,
   select: true,
-  dom: 'Bfrtip',
-  buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
+  // dom: 'Bfrtip',
+  // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
   ordering: false,
+  searching: false,
 });
 
 // slider
