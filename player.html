@@ -126,15 +126,15 @@
     <section class="py-5">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-8 py-2">
+                <div class="col-md-6 py-2">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="custom_card custom_card_player">
                                 <div class="card_heading player_name_first">
-                                    <p>Trevor Bauer</p>
+                                    <p>Trevor </p>
                                 </div>
                                 <div class="row pt-3">
-                                    <div class="col-md-2 py-2">
+                                    <div class="col-md-3 py-2">
                                         <div class="player_img_body">
                                             <div class="player_img">
                                                 <img src="./images/92-300x300.jpg" alt="">
@@ -146,7 +146,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-md-10 py-2">
+                                    <div class="col-md-9 py-2">
                                         <div class="player_info player_info_content">
 
                                             <div class="desig">
@@ -156,7 +156,7 @@
                                                 <p>25</p>
                                             </div>
 
-                                            <table class="table table-striped custom_border table-borderless">
+                                            <table class=" table-striped custom_border player_info_table table-borderless">
                                                 <!-- <thead>
                                               <tr>
                                                 <th scope="col">#</th>
@@ -165,7 +165,7 @@
                                                 <th scope="col">Handle</th>
                                               </tr>
                                             </thead> -->
-                                                <tbody style="font-size: 12px;">
+                                                <tbody style="font-size: 12px; color: rgb(97, 96, 96);">
                                                     <tr>
                                                         <th scope="row">Current Status</th>
                                                         <td>
@@ -254,17 +254,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 py-2">
+                <div class="col-md-6 py-2">
                     <div class="player_content_right">
                         <div class="row">
 
                             <div class="col-md-12">
                                 <div class="player_standings">
-                                    <div class="card_heading player_name_first">
-                                        <p>Batting Skills</p>
+                                    <div class="card_heading ">
+                                        <p>Scouting Report</p>
                                     </div>
                                     <div class="bar_body">
-                                        <div class="player_bar" id="chart_bar" style="height: 456px; width: 100%;"></div>
+                                        <div class="player_bar" id="chart_bar" style="height: 405px; width: 100%;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@
                         </div>
                         <div class="pitching_table pt-3">
                             <table id="projection"
-                                class=" table table-bordered dt-responsive table-responsive nowrap display"
+                                class="  table-bordered dt-responsive table-responsive nowrap display"
                                 width="100%" style="font-size: 11px !important;">
                                 <thead>
                                     <tr style="color: brown !important;">
@@ -540,9 +540,9 @@
     <section class="pb-5">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-12 py-2 ">
+                <div class="col-md-8 py-2 ">
                     <div class="summary_table">
-                        <div class="card_heading player_name_first">
+                        <div class="card_heading ">
                             <p>PRESEASON STATS</p>
                         </div>
                         <div class="table_body summary_table_body">
@@ -620,7 +620,7 @@
                                         <div class="batting_table pt-3">
                         
                                             <table id="p_batting"
-                                                class=" table table-bordered dt-responsive table-responsive nowrap "
+                                                class="  table-bordered dt-responsive table-responsive nowrap "
                                                 width="100%" style="font-size: 11px !important;">
                                                 <thead>
                                                     <tr style="color: brown !important;">
@@ -846,7 +846,7 @@
                                         </div>
                                         <div class="pitching_table pt-3">
                                             <table id="s_pitching"
-                                                class=" table table-bordered dt-responsive table-responsive nowrap display"
+                                                class="  table-bordered dt-responsive table-responsive nowrap display"
                                                 width="100%" style="font-size: 11px !important;">
                                                 <thead>
                                                     <tr style="color: brown !important;">
@@ -1092,7 +1092,7 @@
                                         </div>
                                         <div class="pitching_table pt-3">
                                             <table id="s_fielding"
-                                                class=" table table-bordered dt-responsive table-responsive nowrap display"
+                                                class="  table-bordered dt-responsive table-responsive nowrap display"
                                                 width="100%" style="font-size: 11px !important;">
                                                 <thead>
                                                     <tr style="color: brown !important;">
@@ -1485,12 +1485,14 @@
             // Change type to "doughnut", "line", "splineArea", etc.
             type: "column",
             dataPoints: [
-                { label: "plate discipline",  y: 10  },
-                { label: "contact", y: 15  },
-                { label: " hitting for average", y: 25  },
-                { label: "hitting for power",  y: 30  },
-                { label: "foot speed ",  y: 28  },
-                { label: "throwing arm ",  y: 35  },
+                { label: "present",  y: 20  },
+                { label: "future",  y: 25  },
+                { label: "present", y: 30  },
+                { label: " future", y: 40  },
+                { label: "present",  y: 50  },
+                { label: "future ",  y: 60 },
+                { label: "present ",  y: 70},
+                { label: "future ",  y: 80},
             ]
         }
         ]
