@@ -136,6 +136,7 @@ for (i = 0; i < coll.length; i++) {
 $('#pitching').DataTable({
   responsive: true,
   select: true,
+   searching: false,
   // ordering: false,
 });
 
