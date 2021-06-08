@@ -36,14 +36,16 @@ $('.testimonial_slider').slick({
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1,
       },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
+        arrows: false,
         slidesToScroll: 1,
       },
     },
@@ -133,13 +135,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-$('#pitching').DataTable({
-  responsive: true,
-  select: true,
-   searching: false,
-  // ordering: false,
-});
-
 // =========
 var btn = $('#button');
 
@@ -167,15 +162,7 @@ $('#p_batting').DataTable({
   // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
   ordering: false,
   searching: false,
-});
-
-$('#s_pitching').DataTable({
-  responsive: true,
-  select: true,
-  // dom: 'Bfrtip',
-  // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
-  ordering: false,
-  searching: false,
+  paging: false,
 });
 
 $('#projection').DataTable({
@@ -185,14 +172,14 @@ $('#projection').DataTable({
   // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
   ordering: false,
   searching: false,
+  paging: false,
 });
-$('#s_fielding').DataTable({
+
+$('#pitching').DataTable({
   responsive: true,
   select: true,
-  // dom: 'Bfrtip',
-  // buttons: ['copy', 'csv', 'excel', 'pdf', 'print'],
-  ordering: false,
   searching: false,
+  // ordering: false,
 });
 
 // slider
