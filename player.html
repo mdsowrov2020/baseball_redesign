@@ -1357,29 +1357,53 @@
 <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> -->
     <script>
     window.onload = function () {
+        // CanvasJS.addColorSet("greenShades",
+        //         [//colorSet Array
+
+        //         "#35ACEC",
+        //         "#EC7535",
+        //         "#A9F89C",
+        //         "#9CF8DB",
+        //         "#CD9CF8"                
+        //         ]);
     
     //Better to construct options first and then pass it as a parameter
     var options = {
-        // title: {
-        //     text: " Batting Skills "
-					        
-        // },
-        data: [              
+         colorSet: "greenShades",
+
+        data: [
+      {
+        type: "column",
+        // color: "greenShades",        // change color here
+    
+        dataPoints: [
+        { label: "Now-Future", y: 61, color: "#9bc2e6" },
+        { label: "Now-Future", y: 50, color: "#f4b084"},
+        { label: "Now-Future", y: 55, color: "#c6e0b4" },
+        {  label: "Now-Future", y: 65, color: "#ffff00" },
+        {  label: "Now-Future", y: 55, color: "#7030a0" },
+        {  label: "Now-Future", y: 80, color: "#ff0000" },
+
+
+        ],
+
+      },
         {
-            // Change type to "doughnut", "line", "splineArea", etc.
-            type: "column",
-            dataPoints: [
-                { label: "Label 1 - F",  y: 20  },
-                { label: "Label1 - P",  y: 25  },
-                { label: "Label1 - F", y: 30  },
-                { label: " Label1 - P", y: 40  },
-                { label: "Label1 - F",  y: 50  },
-                { label: "Label1 - P ",  y: 60 },
-                { label: "Label1 - F ",  y: 70},
-                { label: "Label1 - P ",  y: 80},
-            ]
-        }
-        ]
+        type: "column",
+        // color: "greenShades",
+        dataPoints: [
+        { label: "Now-Future", y: 71, color: "#9bc2e6" },
+        {  label: "Now-Future", y: 55, color: "#f4b084"},
+        { label: "Now-Future", y: 66, color: "#c6e0b4" },
+        { label: "Now-Future", y: 56, color: "#ffff00" },
+        {  label: "Now-Future", y: 55, color: "#7030a0" },
+        {  label: "Now-Future", y: 70, color: "#ff0000" },
+
+        ],
+
+      },
+ 
+      ]
     };
     
     $("#chart_bar").CanvasJSChart(options);
