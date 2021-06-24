@@ -1665,3 +1665,64 @@ table.dataTable.no-footer {
 .player_bio ul li span {
   color: #868181 !important;
 }
+
+.player_bio table{
+  display: block;
+  width: 100%;
+  background-color: #00acee;
+}
+
+.player_bio_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1px 0;
+}
+
+
+.bio_left_column{
+  width: 45%;
+}
+
+.bio_right_column{
+  width: 55%;
+  
+}
+
+
+ .bio_left_head{
+  width: 40%;
+  background-color: rgb(216, 213, 213);
+  padding: 2px 6px;
+}
+
+
+
+
+ .bio_left_head p{
+  font-size: 13px;
+}
+
+
+.bio_left_val{
+  width:60%;
+  padding: 2px 6px;
+  background-color: rgb(240, 238, 238);
+}
+
+ .bio_left_val p{
+  font-size: 13px;
+}
+
+.bio_left_column.long{
+  width: 100% !important;
+}
+
+.bio_left_column.long  .bio_left_head{
+  width: 19%;
+}
+
+.bio_left_column.long .bio_left_val{
+  width: 87%;
+}

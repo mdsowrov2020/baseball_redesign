@@ -55,4 +55,18 @@
     overflow: hidden;
     padding: 5px;
   }
+  /* .player_bio{
+    overflow-x: scroll;
+  } */
+  .player_bio_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1px 0;
+    flex-direction: column;
+  }
+  .bio_left_column.long  .bio_left_head{
+    width: 87%;
+  }
 }
