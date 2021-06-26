@@ -1726,3 +1726,11 @@ table.dataTable.no-footer {
 .bio_left_column.long .bio_left_val{
   width: 87%;
 }
+
+.player_img{
+  height: auto !important;
+}
+
+   @media (min-width: 1200px) .container, .container-lg, .container-md, .container-sm, .container-xl, .container-custom {
+    max-width: 1440px !important;
+}

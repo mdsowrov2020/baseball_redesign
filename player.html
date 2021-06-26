@@ -130,7 +130,7 @@
     <section class="py-5">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-10 py-2">
+                <div class="col-md-12 py-2">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="custom_card custom_card_player">
@@ -150,7 +150,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-md-10 py-2">
+                                    <div class="col-md-6 py-2">
                                         <div class="player_info player_info_content">
 
                                             <div class="desig">
@@ -365,30 +365,31 @@
 
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                    <div class="col-md-4 py-2">
+                                        <div class="player_content_right">
+                                            <div class="row">
 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-10 py-2">
-                    <div class="player_content_right">
-                        <div class="row">
-
-                            <div class="col-md-12">
-                                <div class="player_standings">
-                                    <div class="card_heading ">
-                                        <p>Double-A Altoona Curve (Pittsburgh Pirates)</p>
-                                    </div>
-                                    <div class="bar_body">
-                                        <div class="player_bar" id="chart_bar" style="height: 405px; width: 100%;">
+                                                <div class="col-md-12">
+                                                    <div class="player_standings">
+                                                        <div class="card_heading ">
+                                                            <p>Double-A Altoona Curve (Pittsburgh Pirates)</p>
+                                                        </div>
+                                                        <div class="bar_body">
+                                                            <div class="player_bar" id="chart_bar" style="height: 405px; width: 100%;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+                
 
 
             </div>
@@ -400,7 +401,7 @@
 
 
     <section class="pb-5">
-        <div class="container-fluid">
+        <div class="container container-custom">
             <div class="row justify-content-center">
                 <div class="col-md-12 py-2 ">
                     <div class="summary_table">
@@ -450,7 +451,7 @@
     </section>
 
     <section class="py-5" id="s_pitching_table">
-        <div class="container-fluid">
+        <div class="container container-custom">
             <div class="card">
                 <div class="row justify-content-center">
 
@@ -591,7 +592,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -623,7 +624,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -655,7 +656,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -687,7 +688,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -1211,7 +1212,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -1231,7 +1232,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -1251,7 +1252,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -1269,7 +1270,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -1289,7 +1290,7 @@
                                                             <tr>
                                                                 <td>1</td>
                                                                 <td>C</td>
-                                                                <td>Michael Perez*</td>
+                                                                <td>PIT*</td>
                                                                 <td>27</td>
                                                                 <td>38</td>
                                                                 <td>93</td>
@@ -1608,17 +1609,30 @@
             //Better to construct options first and then pass it as a parameter
             var options = {
                 colorSet: "greenShades",
-
+                axisY:{
+                    // title: "axisY2 Title",
+                    labelPlacement: "right",
+                },
+                axisX: {
+                    labelMaxWidth: 70,
+                    labelWrap: true,   // change it to false
+                    interval: 1,
+                    labelAutoFit: true,
+                    labelAngle: 0,
+                    labelFontSize: 12,
+                    labelTextAlign: "center",
+                    // prefix: "Very long label "
+                },
                 data: [
                     {
                         type: "column",
                         // color: "greenShades",        // change color here
 
                         dataPoints: [
-                            { label: "Now-Future", y: 30, color: "#9bc2e6" },
+                            { label: "Now-Future", y: 40, color: "#9bc2e6" },
                             { label: "Now-Future", y: 30, color: "#f4b084" },
                             { label: "Now-Future", y: 40, color: "#c6e0b4" },
-                            { label: "Now-Future", y: 50, color: "#ffff00" },
+                            { label: "Now-Future", y: 25, color: "#ffff00" },
                             { label: "Now-Future", y: 60, color: "#7030a0" },
                             { label: "Now-Future", y: 75, color: "#ff0000" },
 
@@ -1629,22 +1643,30 @@
                     {
                         type: "column",
                         // color: "greenShades",
+                        axisYType: "secondary",
                         dataPoints: [
-                            { label: "Now-Future", y: 25, color: "#9bc2e6" },
-                            { label: "Now-Future", y: 55, color: "#f4b084" },
-                            { label: "Now-Future", y: 60, color: "#c6e0b4" },
-                            { label: "Now-Future", y: 50, color: "#ffff00" },
-                            { label: "Now-Future", y: 45, color: "#7030a0" },
-                            { label: "Now-Future", y: 65, color: "#ff0000" },
+                            { label: "Now-Fut Disciline", y: 25, color: "#9bc2e6" },
+                            { label: "Now-Fut Contact", y: 75, color: "#f4b084" },
+                            { label: "Now-Fut Average", y: 60, color: "#c6e0b4" },
+                            { label: "Now-Fut Power", y: 50, color: "#ffff00" },
+                            { label: "Now-Fut Arm", y: 45, color: "#7030a0" },
+                            { label: "Now-Fut Speed", y: 62, color: "#ff0000" },
 
                         ],
 
                     },
 
-                ]
+                ],
+
             };
 
-            $("#chart_bar").CanvasJSChart(options);
+            var chart = $("#chart_bar").CanvasJSChart(options);
+
+
+
+
+
+
         }
     </script>
     <!-- <script>
@@ -1658,6 +1680,8 @@
   paging: false,
 });
 </script> -->
+
+
 
 </body>
 
