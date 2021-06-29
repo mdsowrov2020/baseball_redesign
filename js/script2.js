@@ -10,7 +10,7 @@ var player_banner_fix = document.getElementById('player_bannr_sticky');
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset > 100) {
+  if (window.pageYOffset > 300) {
     navbar.classList.add('sticky');
     player_banner_fix.classList.add('player_info_sticky');
   } else {

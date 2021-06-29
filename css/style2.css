@@ -920,6 +920,7 @@ table.dataTable.no-footer {
 }
 .team_banner.player_banner .banner_heading h2{
   font-size: 20px !important;
+  font-weight: 900 !important;
 }
 .table.team_table {
   border-radius: 0px !important;
@@ -1740,7 +1741,9 @@ line-height: 37px;
   height: auto !important;
 }
 
- 
+.stat_tabs{
+  background-color: #484848;
+}
 .stat_tabs ul{
   margin: auto !important;
   margin-left: 50% !important;
@@ -1753,11 +1756,16 @@ line-height: 37px;
   margin: auto;
 }
 
+.stat_tabs ul li a{
+  color: #fff !important;
+  margin: 0 !important;
+  padding:auto 0 !important;
+}
 
 .player_info_sticky{
   position: fixed;
   top: 70px;
   left: 0;
   width: 100%;
-  z-index: 2000;
+  z-index: 1000;
 }
