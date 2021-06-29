@@ -890,16 +890,19 @@ table.dataTable.no-footer {
   position: relative;
   z-index: 1;
 }
+.team_banner.player_banner{
+  height: 57px !important;
 
+}
 .team_banner::before {
   position: absolute;
   content: '';
   top: 0;
   left: 0;
   height: 100%;
-  width: 65%;
+  width: 85%;
   clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
-  background-color: rgba(189, 67, 254, 0.42);
+  background-color: rgba(181, 48, 252, 0.42);
   z-index: -1;
 }
 
@@ -915,7 +918,9 @@ table.dataTable.no-footer {
   text-transform: uppercase;
   font-weight: 700;
 }
-
+.team_banner.player_banner .banner_heading h2{
+  font-size: 20px !important;
+}
 .table.team_table {
   border-radius: 0px !important;
 }
@@ -1089,7 +1094,7 @@ table.dataTable.no-footer {
   -webkit-box-shadow: 0px 10px 30px #2b56f524;
   -moz-box-shadow: 0px 10px 30px #2b56f524;
   box-shadow: 0px 10px 30px #2b56f524;
-  padding: 20px;
+  padding: 2px;
   /* height: 400px;
   overflow: hidden; */
   background-color: #fff;
@@ -1692,9 +1697,11 @@ table.dataTable.no-footer {
 
 
  .bio_left_head{
-  width: 40%;
+  width: 32%;
   background-color: rgb(216, 213, 213);
   padding: 2px 6px;
+height: 37px;
+line-height: 37px;
 }
 
 
@@ -1706,9 +1713,11 @@ table.dataTable.no-footer {
 
 
 .bio_left_val{
-  width:60%;
+  width:68%;
   padding: 2px 6px;
   background-color: rgb(240, 238, 238);
+  height: 37px;
+  line-height: 37px;
 }
 
  .bio_left_val p{
@@ -1720,7 +1729,7 @@ table.dataTable.no-footer {
 }
 
 .bio_left_column.long  .bio_left_head{
-  width: 19%;
+  width: 14.5%;
 }
 
 .bio_left_column.long .bio_left_val{
@@ -1731,6 +1740,24 @@ table.dataTable.no-footer {
   height: auto !important;
 }
 
-   @media (min-width: 1200px) .container, .container-lg, .container-md, .container-sm, .container-xl, .container-custom {
-    max-width: 1440px !important;
+ 
+.stat_tabs ul{
+  margin: auto !important;
+  margin-left: 50% !important;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+.stat_tabs ul li{
+  text-align: center;
+  margin: auto;
+}
+
+
+.player_info_sticky{
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
 }

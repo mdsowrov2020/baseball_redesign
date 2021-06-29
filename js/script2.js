@@ -3,6 +3,7 @@ window.onscroll = function () {
   myFunction();
 };
 var navbar = document.getElementById('navbar');
+var player_banner_fix = document.getElementById('player_bannr_sticky');
 
 // Get the offset position of the navbar
 // var sticky = navbar.offsetTop;
@@ -11,8 +12,10 @@ var navbar = document.getElementById('navbar');
 function myFunction() {
   if (window.pageYOffset > 100) {
     navbar.classList.add('sticky');
+    player_banner_fix.classList.add('player_info_sticky');
   } else {
     navbar.classList.remove('sticky');
+    player_banner_fix.classList.remove('player_info_sticky');
   }
 }
 
