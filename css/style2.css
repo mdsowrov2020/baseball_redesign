@@ -917,7 +917,7 @@ table.dataTable.no-footer {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  font-size:28px !important;
+
 }
 .team_banner.player_banner .banner_heading h2{
   font-size: 20px !important;
@@ -1769,4 +1769,7 @@ line-height: 37px;
   left: 0;
   width: 100%;
   z-index: 1000;
+}
+.player_name_h2{
+ font-size:28px !important;"
 }
