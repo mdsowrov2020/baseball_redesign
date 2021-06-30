@@ -104,6 +104,7 @@
   font-size: 14px !important;
   font-weight: 900 !important;
 }
+
 /* .bio_left_head {
   height: 100%;
   line-height: 37px;
@@ -122,4 +123,12 @@
   top: 66px;
 
 }
+.player_name_h2{
+ font-size:14px !important;"
+
+}
+}
+
+.player_name_h2{
+ font-size:28px !important;
 }
