@@ -1770,3 +1770,15 @@ line-height: 37px; */
 .player_name_h2 {
   font-size: 28px !important;
 }
+
+.quick-links ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+.quick-links ul li:last-child {
+  margin-right: 0;
+}
+
+.quick-links ul li a {
+  color: #484848;
+}
