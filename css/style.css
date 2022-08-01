@@ -839,7 +839,7 @@ table {
 
 table.dataTable thead th,
 table.dataTable thead td {
-  padding: 8px 3px !important;
+  padding: 8px 10px !important;
   border-bottom: 1px solid rgb(212, 212, 212) !important;
 }
 
